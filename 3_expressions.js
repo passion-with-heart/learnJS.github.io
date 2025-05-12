@@ -20,6 +20,7 @@
 //? Assignment operators in programming are symbols used to assign values to variables. They take the value on the right side of the operator and assign it to the variable on the left side.
 
 // examples
+var muyName = "kismat";
 
 //* ===================================
 //* 2: Arithmetic operators
@@ -63,13 +64,18 @@
 //* ====================================
 
 //! What will be the Output 🤔💭
-// let result = "hello" / 2 ❓
+// let result = "hello" / 2;
+// console.log(result);
+
 
 //* ===================================
 //*  InterView Question
 //* ====================================
 
-//! let result = 0.1 + 0.2 ❓ 🤔💭
+// let result = 0.1 + 0.2;
+// let result = 0.2 + 0.2;
+// let result = 0.1 + 0.2;
+// console.log(result.toFixed(2));
 
 //* ===================================
 //* 3: String Operators
@@ -95,7 +101,7 @@
 //? Comparison operators in JavaScript are used to compare values and return a Boolean result (true or false).
 
 //? Equal (==): Checks if two values are equal, performing type coercion if necessary.
-// console.log(5 == 5);
+console.log(5 == 5);
 
 //? Strict Equal (===):
 // Checks if two values are equal without performing type coercion.

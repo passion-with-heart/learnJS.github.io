@@ -326,3 +326,23 @@ var isRegistered = false;
 // }else {
 //     console.log(`${userInput} is not a leap year`);
 // }
+
+// year should be divisible by 400 and not dividible by 100 or divisible by 4 
+// let year = 2025;
+// if ((year % 400 === 0 && year % 100 !== 0) || year % 4 === 0) {
+//     console.log(`${year} is a leap year`);
+// }else {
+//     console.log(`${year} is not a leap year`);
+// }
+
+ //? cratea pattern of half christmas tree with star
+ // star will be printed when the value of i=j
+ 
+ for (var i=1; i<=10; i++){
+    pattern = " ";
+    // console.log(pattern);
+    for (var j=1; j<=i; j++){
+    pattern = pattern + " * "
+    }    
+    console.log(pattern);
+ }

@@ -101,7 +101,7 @@ var muyName = "kismat";
 //? Comparison operators in JavaScript are used to compare values and return a Boolean result (true or false).
 
 //? Equal (==): Checks if two values are equal, performing type coercion if necessary.
-console.log(5 == 5);
+// console.log(5 == 5);
 
 //? Strict Equal (===):
 // Checks if two values are equal without performing type coercion.
@@ -153,13 +153,16 @@ console.log(5 == 5);
 // Example:
 // var a = 15;
 // var b = 0;
-// console.log(a > 10 || b > 10);
+// console.log(a < 10 || b < 10);
 
 //? Logical NOT (!):
 //? Returns true if the operand is false, and false if the operand is true.
 // Example:
 // var isOpen = false;
 // console.log(!isOpen);
+// var isOpen = true;
+// console.log(!isOpen);
+
 
 //* ===================================
 //*  InterView Question
@@ -168,8 +171,19 @@ console.log(5 == 5);
 //? Combining logical operators allows you to create complex conditions:
 //! Q: Write a program that determines if a person is eligible to drive based on their age being greater than or equal to 18 and having a valid driver's license❓
 
+// age > 18
+// age = 18
+// age >= 18
+// hadDrivingLicense = true
+
 // var age = 18;
 // var hadDrivingLicense = true;
+// console.log(age >= 18 && hadDrivingLicense);
+
+// if (age >= 18 && hadDrivingLicense) {
+//     console.log("he can drive");
+
+
 
 //! How would the result change if hasDriverLicense was set to false❓
 
@@ -180,13 +194,23 @@ console.log(5 == 5);
 //? syntax: condition ? expressionIfTrue : expressionIfFalse;
 // ! write a program to check if the candidates isEligibleToDrive or not? Age must be equal to or greater then 18.
 
+// var age = 19;
+// var result = age >= 18 ? "Yes" : "No";
+// console.log(result);
+
+
 //! Q: Let's say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
+// var stuScore = 59.9;
+// var result = stuScore >= 60 ? "Pass" : "Fail";
+// console.log(result);
+
 
 //* ===================================
 //*  Combined Interview Questions
 //* ====================================
 
 // console.log("5" - 3);
+// console.log(typeof("5" - 3));
 
 // console.log(2 < 12 < 5);
 

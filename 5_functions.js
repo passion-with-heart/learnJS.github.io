@@ -4,8 +4,14 @@
 //? In JavaScript, a function is a block of reusable code that performs a specific task or set of tasks. Functions are used to organize code into modular and manageable pieces, promote code reuse, and make programs more readable.
 
 //  3 students at a time wants to find the sum of two numbers
-
 // 1st student
+// function sum(a,b) {
+//     return (a+b)
+// }
+// console.log(sum(5,7));
+// console.log(sum(5,56));
+// console.log(sum(53,7));
+
 
 //* ===============================
 //* Function Declaration:
@@ -34,9 +40,13 @@
 //todo Tips "1st declare the function & then call it" In JavaScript, it's a good practice to declare (define) your functions before you call them. This ensures that the function is available for use when you try to call it.
 
 // Function definition
+// function sum() {
+//     var a = 15,   b = 10;
+//     console.log(a+b);
+// }
 
 // Calling the function
-
+// sum();
 //* ==============================
 //* Function Parameter:
 //* ==============================
@@ -60,18 +70,37 @@
 //! Practice Time
 //? Let's say we want to greet students with one same line
 //! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
+// function greet(name) {
+//     console.log("Hello " +  name + ", Welcome to Thapa Technical JS Course");
+// }
+// greet("Kismat");
+// greet("Vinod");
 
 //! 1. Write a function to find the sum of two numbers with parameters.
+// function sum(a,b) {
+//     console.log(a+b);
+// }
+// sum(6,7);
 
 //* ==============================
 //* Function expressions
 //* ==============================
 //? A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
 
+// var result = function sum(a,b) {
+//     console.log(a+b);
+// }
+// result(6,7);
+
 //* ==============================
 //*  Anonymous Function
 //* =============================
 //? An anonymous function is a function without a name. It can be created using either a function expression or a function declaration without a specified name.
+
+// var result = function(a,b){
+//     console.log(a+b);
+// }
+// result(5,8);
 
 //* ==============================
 //*  Return Keyword
@@ -83,6 +112,20 @@
 
 //! Example 1: Returning a Sum of two number
 
+// function sum(a,b) {
+//     // console.log(a + b);
+//     return a + b;
+// }
+// var result = sum(6,8);
+// console.log(result);
+
+// console.log(`The sum of two digit is ${result}`);
+
+    // console.log (sum (6,7));
+    // console.log (sum (4,3));
+    // console.log (sum (7,9));
+
+
 //* ==============================
 //* IIFE - immediately invoked function expression
 //* =============================
@@ -93,7 +136,14 @@
 //   // code to be executed
 // })();
 
-// !Practice Time ( IIFE with Parameters)
+// var result = (function (a,b) {
+//     console.log(a+b);
+//     return a + b;
+// })(5,10)
+// console.log(`The sum of two digit is ${result}`);
+
+
+// !Practice Time ( IIFE with Parameters)`
 
 //? Interview Questions
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>JS learning</title>
 </head>
 <body>
-    <h1>welcome to world best JavaScript Course</h1>
+    <h1>welcome to world best JavaScript Course</h1> -->
     <!-- <button onclick="alert('welcome, eoseo')">welcome</button>
 
     <script>
@@ -17,7 +17,85 @@
 
     <!-- <script src="intro.js"></script> -->
     <!-- <script src="0_variables.js"></script> -->
-    <script src="1_datatypes.js"></script>
+    <!-- <script src="1_datatypes.js"></script> -->
 
+<!-- </body>
+</html> -->
+
+
+""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        #container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Palindrome Checker</h2>
+        <input type="text" id="inputString" placeholder="Enter a string">
+        <button onclick="checkPalindrome()">Check</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkPalindrome() {
+            const str = document.getElementById("inputString").value;
+            let reverse = "";
+            for (let char = str.length - 1; char >= 0; char--) {
+                reverse += str[char];
+            }
+            const resultDiv = document.getElementById("result");
+            if (str === reverse) {
+                resultDiv.textContent = `"${str}" is a Palindrome.`;
+                resultDiv.style.color = "green";
+            } else {
+                resultDiv.textContent = `"${str}" is not a Palindrome.`;
+                resultDiv.style.color = "red";
+            }
+        }
+    </script>
 </body>
 </html>
+""

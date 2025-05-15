@@ -149,9 +149,87 @@
 
 //! Question 1: Calculator Function
 //! Write a JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.
+// console.log(calculator(2, 5, '+')); // output 7
+
+// function calculator(num1, num2, operator) {
+//     let result;
+//     switch (operator) {
+//         case "+":
+//             result = num1 + num2;
+//             return result;
+
+//         case "-":
+//             result = num1 - num2;
+//             return result;
+
+//         case "*":
+//         result = num1*num2;
+//         return result;
+
+//     case "/":
+//         result = num1/num2;
+//         return result;
+
+//         default:
+//             result = "no operator found"
+//             return result;
+//         }
+//     }
+//     console.log(calculator(2, 5, '+'));
+//     console.log(calculator(20, 5, '-'));
+//     console.log(calculator(2, 5, '*'));
+//     console.log(calculator(20, 5, '/'));
 
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
+// first reverse the name and print alphabts belew one after another using for loop 
+// let myName = "kismat ali";
+// let reverse = "";
+// for(char=myName.length-1; char>=0; char--){
+//     console.log(myName[char]);
+    
+// }
+// after that sum all the alphabets in a empty string " "
+// let myName = "kismat ali";
+// let reverse = "";
+// for(char=myName.length-1; char>=0; char--){
+//     reverse = reverse + myName[char];
+// }
+// console.log(reverse);
+
+// const isReverse = (str) => {
+//     for (char = str.length - 1; char >= 0; char--) {
+//         console.log(str[char]);
+        
+//     }
+// }
+// isReverse("kismat ali");
+
+// const isReverse = (str) => {
+//     let reverse = " ";
+//     for (char = str.length - 1; char >= 0; char-- ) {
+//         reverse = reverse + str[char];
+//     }
+//     return reverse;
+// }
+
+// console.log(isReverse("meraj"));
+
+
+
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
+
+const isReverse = (str) => {
+    let reverse = "";
+    for (let char = str.length - 1; char >= 0; char--) {
+        reverse = reverse + str[char];
+    }
+    if (reverse === str) {
+        return true;
+    }else {
+        return false;
+    }
+}
+console.log(isReverse("level"));

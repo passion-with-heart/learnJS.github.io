@@ -17,35 +17,91 @@
 
 //? Using Array constructor
 
+// const fruits = new Array("apple", "orane", "banana");
+// console.log(fruits);
+
 //? Using array literal
+// let fruits = ["apple", "orane", "banana"];
+// console.log(fruits);
+
 
 //? we can also create an empty array
+// let arr = [];
+// console.log(typeof arr);
 
 //* ======================================
 //*  Accessing Elements:
 //* =====================================
 //?👉 Accessing Elements:  Array elements are accessed using zero-based indices.
 
+// let fruits = ["apple", "orane", "banana"];
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+
 //* ======================================
 //*  Modifying Elements:
 //* =====================================
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
+// let fruits = ["apple", "orane", "banana"];
+// fruits[1] = "mango"
+// console.log(fruits);
+
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
+
+// let fruits = ["apple", "orane", "banana", "mango", "grapes", "papaya"];
+
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
+
+// for (let items of fruits) {
+//     console.log(items);
+// }
+// console.log(fruits.at(-1));
+
 
 //? 2: for in loop
 //* for...in Loop: The for...in loop is used to iterate over the properties (including indices) of an object.
 
+// for (let items in fruits) {
+//     console.log(items);
+// }
+
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
+// fruits.forEach((curElm, index, arr) => {
+//     console.log(`${curElm} ${index} ${arr}`);
+    
+// });
+
+// const myForEachArr = fruits.forEach((curElm, index, arr) => {
+//     return `${curElm}, ${index}`;
+// });
+// console.log(myForEachArr); // beacuse it doesn't give any return value.
+
+
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
+
+// fruits.map((curElm, index, arr) => {
+//     console.log(`${curElm}, ${index}`);
+    
+// });
+
+// const myMapArr = fruits.map((curElm, index, arr) => {
+//     return `${curElm} ${index}`
+// });
+// console.log(myMapArr);
+
+// const myMapArr = fruits.map((curElm, index, arr) => {
+//     return `my favorite fruit is ${curElm}`
+// });
+// console.log(myMapArr);
+
 
 //todo Practice Time
 //! write a program to Multiply each element with 2
@@ -53,13 +109,32 @@
 // forEach -  Performs an action on each element
 // map -  Creates a new array with transformed elements
 
+// numbers.forEach((curElm) => {
+//     console.log(curElm * 2);
+    
+// });
+
+// const doubleValue = numbers.map((curElm) => {
+//     return `${curElm * 2}`;
+// });
+// console.log(doubleValue);
+
+
 //* ==========================================================================
 //*  How to Insert, Add, Replace and Delete Elements in Array(CRUD) - p1
 //* ==========================================================================
 
 //? 👉 How to Insert, Add, Replace and Delete Elements in Array(CRUD)
 
-//? 1: push(): Method that adds one or more elements to the end of an array.
+let fruits = ["apple", "orane", "banana", "mango", "grapes", "papaya"];
+// ? 1: push(): Method that adds one or more elements to the end of an array.
+
+fruits.push("pineApple");
+console.log(fruits);
+console.log(fruits.push("pineApple"));
+
+
+
 //? 2: pop(): Method that removes the last element from an array.
 //? 3: unshift(): Method that adds one or more elements to the beginning of an array.
 //? 4: shift(): Method that removes the first element from an array.
